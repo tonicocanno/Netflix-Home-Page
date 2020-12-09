@@ -1,0 +1,104 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+header .netflix-logo{
+    width: 10rem;
+}
+
+header .container nav a{
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header .container nav a:hover{
+    color: #fff
+}
+
+/* FILME PRINCIPAL */
+
+.main-movie {
+    font-size: 18px;
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.9), rgba(0,0,0,0)), url(/img/capa-attackontitan.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.synopsis{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.main-movie .title{
+    margin-top: 5%;
+    font-size: 60px;
+    font-family: fantasy;
+}
+
+.button{
+    padding: 13px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: var(--preto);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.button:hover{
+    color: var(--preto);
+    background-color: #fff;
+}
+
+.button i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 40px;
+}
+
+.main-movie .container{
+    width: 50%;
+}
+
+.item{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 5px;
+}
